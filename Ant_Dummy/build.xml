@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project name="VTForce" default="info">
+<property file="build.properties"/>
+	
+	<target name="info">
+	<echo>Hi Haresh from build.xml file</echo>
+	<echo>ant.version = ${ant.version}</echo>
+	<echo>ant.file = ${ant.file}</echo>
+	<echo>ant.java.version = ${ant.java.version}</echo>
+	<echo>ant.project.name = ${ant.project.name}</echo>
+	<echo>ant.project.default-target = ${ant.project.default-target}</echo>
+	<echo>ant.core.lib = ${ant.core.lib}</echo>
+	<echo>ant.home = ${ant.home}</echo>
+	<echo>ant.library.dir = ${ant.library.dir}</echo>
+	<echo>ant.project.invoked-targets = ${ant.project.invoked-targets}</echo>
+	<echo>Basedir = ${basedir}</echo>
+	<echo>---------------------------------------------------------------------</echo>
+	
+	<echo> Pulling info from properties file</echo>
+	<echo> Company Name = ${CompanyName} </echo>
+	<echo> Name = ${Name}</echo>
+	<echo> Number = ${Number}</echo>
+	</target>
+
+	<target name="clean" >
+	<echo>Clean Block Executed</echo>
+	</target>
+
+
+	<target name="compile" >
+	<echo>Compile Block Executed</echo>
+	</target>
+
+	<target name="run" >
+	<echo>Run Block Executed</echo>
+	</target>
+
+	<target name="jar" >
+	<echo>Jar Block Executed</echo>
+	</target>
+</project>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project name="VTForce" default="info">
+	
+	<target name="info">
+	<echo>Hi This is from info block</echo>
+	</target>
+
+	<target name="clean" >
+	<echo>Now entering Clean Block</echo>
+	<delete dir="./Jar"/>
+	<echo>Removed Jar folder and its contents</echo>
+	<delete dir="./Class"/>
+	<echo>Deleted class folder</echo>
+	</target>
+
+	<target name="compile" >
+	<echo>Compile Block Executed</echo>
+	<mkdir dir="./Class"/>
+	<javac srcdir="./Java" destdir="./Class"/>
+	</target>
+	
+	<target name="jar" >
+	<echo>Jar Block Executed</echo>
+	<mkdir dir="./Jar"/>
+	<jar destfile="./Jar/ABC.jar" basedir="./Class">
+	<manifest>
+		<attribute name="Main-Class" value="one"/>
+	</manifest>
+	</jar>
+	</target>
+
+	<target name="run" >
+	<echo>Run block executed</echo>
+	<java jar ="./Jar/ABC.jar" fork="true"/>
+	</target>
+	
+
+	
+</project>

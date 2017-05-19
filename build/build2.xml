@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="VTForce" default="Jar">
+	
+	<target name="Jar">
+	<echo>Jar block executed</echo>
+	<mkdir dir="./Jar"/>
+	<jar destfile ="./Jar/ABC.jar" basedir="./Class">
+	
+	<manifest>
+		
+		<attribute name="Main-Class" value="one"/>
+
+	</manifest>
+	</jar>
+	</target>
+	
+	
+
+</project>

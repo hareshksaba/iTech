@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<project name="VTForce" default="compile">
+	
+	<target name="compile">
+	<echo>compile block executed</echo>
+	<javac srcdir="./Java" destdir="./Class"/>
+	</target>
+	
+	
+
+</project>
